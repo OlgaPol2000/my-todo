@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +31,49 @@ body {
   font-weight: 400;
 }
 
-.container {
-  max-width: 1200px;
-  /* максимальна ширина береться з макету */
+.container{
+  max-width: 700px;
   width: 100%;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+.todo__title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.todo__form{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo__input{
+  flex-grow: 1;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+.todo__btn{
+  padding: 5px 10px;
+  background-color: #8c17c2;
+  color: #eec8ff;
+  border: none;
+  cursor: pointer;
+}
+
+.todo__list li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #eec8ff;
+}
+.todo__list input[type="checkbox"]{
+  margin-right: 20px;
+}
+
+.todo__list span{
+  flex-grow: 1;
 }
