@@ -7,7 +7,7 @@ savedTodos.forEach((todo) => {
   const li = document.createElement("li");
   li.innerHTML = `
     <input type='checkbox' />
-    <span>${todo.value}</span>
+    <span>${todo.text}</span>
     <button>Видалити</button>
     `;
   todoList.appendChild(li);
