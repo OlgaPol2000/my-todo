@@ -36,6 +36,10 @@ addBtn.addEventListener("click", (e) => {
 
 todoList.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
-    e.target.parentNode.remove();
+    const li = e.target.parentNode;
+    const index = Array.prototype.indexOf.call(todoList.children, li)
+    savedTodos.splice(index, 1);
+    localStorage.setItem("todos", JSON.stringify(savedTodos));
+    li.remove();
   }
 });
